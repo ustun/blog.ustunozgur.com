@@ -6,9 +6,47 @@
 </description>
     <link>http://ustunozgur.com/</link>
     <atom:link href="http://ustunozgur.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 17 Jun 2015 17:50:50 +0300</pubDate>
-    <lastBuildDate>Wed, 17 Jun 2015 17:50:50 +0300</lastBuildDate>
+    <pubDate>Wed, 17 Jun 2015 18:04:11 +0300</pubDate>
+    <lastBuildDate>Wed, 17 Jun 2015 18:04:11 +0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>My Recent Talks on JavaScript</title>
+        <description>&lt;p&gt;I have been giving some talks recently on various topics related to
+JavaScript, mostly centered around ReactJS and EcmaScript.&lt;/p&gt;
+
+&lt;p&gt;Here is a list of those recent videos:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/129469530&quot;&gt;Standing on the Shoulders of Giants or How to Read the Internals of React.js&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I gave this talk at AtTheFrontend conference in Denmark in May 2015.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=NSeurgO39Hk&quot;&gt;Introduction to ReactJS&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=SlrirWY9JTk&quot;&gt;Introduction to EcmaScript 6&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I gave these talks in meetup groups in Barcelona in March 2015.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=wk6QAD0aLt0&quot;&gt;Taming Complexity with Django and React.js&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This talk was in Djangocon Europe 2014 in May 2014.&lt;/p&gt;
+
+&lt;p&gt;Stay tuned,&lt;/p&gt;
+
+&lt;p&gt;Ustun&lt;/p&gt;
+</description>
+        <pubDate>Wed, 17 Jun 2015 17:15:29 +0300</pubDate>
+        <link>http://ustunozgur.com/javascript/programming/videos/2015/06/17/my-recent-talks-on-javascript.html</link>
+        <guid isPermaLink="true">http://ustunozgur.com/javascript/programming/videos/2015/06/17/my-recent-talks-on-javascript.html</guid>
+        
+        
+        <category>javascript</category>
+        
+        <category>programming</category>
+        
+        <category>videos</category>
+        
+      </item>
     
       <item>
         <title>How to Become a Great JavaScript Developer</title>
