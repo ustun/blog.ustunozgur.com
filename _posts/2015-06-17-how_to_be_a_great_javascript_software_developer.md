@@ -152,6 +152,6 @@ Ustun
 
 *If you read so far, consider following me on Twitter at [@ustunozgur](http://twitter.com/ustunozgur)*
 
-*Thanks to Engin Arslan for initiating this discussion with me.*
+*Thanks to [Engin Arslan](http://enginarslan.com/) for initiating this discussion with me.*
 
 *Discuss this on [HackerNews]()*
