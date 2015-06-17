@@ -46,7 +46,7 @@ will probably keep it as a reference. jQuery's principle author John Resig's
 you are looking for good (and freely available online) books, take a look at
 [JavaScript Allongé](https://leanpub.com/javascript-allonge/),
 [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) and
-[Eloquent JavaScript](http://eloquentjavascript.net/). These can be purchased
+[Eloquent JavaScript](http://eloquentjavascript.net/) (see also its annotated version [here](https://watchandcode.com/courses/eloquent-javascript-the-annotated-version)). These can be purchased
 as ebooks or dead tree format. Also, not a book but Mozilla's Developer
 Network has a good
 [guide on JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide).
