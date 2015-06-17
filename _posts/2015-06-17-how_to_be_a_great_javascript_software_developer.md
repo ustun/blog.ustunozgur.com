@@ -47,7 +47,7 @@ you are looking for good (and freely available online) books, take a look at
 [JavaScript Allongé](https://leanpub.com/javascript-allonge/),
 [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) and
 [Eloquent JavaScript](http://eloquentjavascript.net/). These can be purchased
-as ebooks or dead tree formatAlso, not a book but for Mozilla's Developer
+as ebooks or dead tree format. Also, not a book but for Mozilla's Developer
 Network has a good
 [guide on JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide).
 
@@ -83,7 +83,10 @@ language, so make sure to have a test harness that can run in node.js. Do
 small, but plenty exercises in node.js. Do katas and go through different ways
 of using JavaScript: closures, prototypes, array-extras (map, filter)
 etc. While doing the exercises, always have a list of fundamental ideas in
-JavaScript in your mind.
+JavaScript in your mind. A friend of mine, Armagan, who is an excellent
+JavaScript programmer and teacher uses the book
+[Pro JavaScript Design Patterns](http://www.apress.com/9781590599082) in his
+lectures, so this book is worth checking out.
 
 Try to answer questions such as: How does prototypal inheritance work? What
 defines a closure? How does the meaning of this keyword change? How does one

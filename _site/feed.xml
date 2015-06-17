@@ -6,8 +6,8 @@
 </description>
     <link>http://ustunozgur.com/</link>
     <atom:link href="http://ustunozgur.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 17 Jun 2015 14:54:36 +0300</pubDate>
-    <lastBuildDate>Wed, 17 Jun 2015 14:54:36 +0300</lastBuildDate>
+    <pubDate>Wed, 17 Jun 2015 15:03:35 +0300</pubDate>
+    <lastBuildDate>Wed, 17 Jun 2015 15:03:35 +0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -54,7 +54,7 @@ you are looking for good (and freely available online) books, take a look at
 &lt;a href=&quot;https://leanpub.com/javascript-allonge/&quot;&gt;JavaScript Allongé&lt;/a&gt;,
 &lt;a href=&quot;https://github.com/getify/You-Dont-Know-JS&quot;&gt;You Don’t Know JS&lt;/a&gt; and
 &lt;a href=&quot;http://eloquentjavascript.net/&quot;&gt;Eloquent JavaScript&lt;/a&gt;. These can be purchased
-as ebooks or dead tree formatAlso, not a book but for Mozilla’s Developer
+as ebooks or dead tree format. Also, not a book but for Mozilla’s Developer
 Network has a good
 &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide&quot;&gt;guide on JavaScript&lt;/a&gt;.&lt;/p&gt;
 
@@ -90,7 +90,10 @@ language, so make sure to have a test harness that can run in node.js. Do
 small, but plenty exercises in node.js. Do katas and go through different ways
 of using JavaScript: closures, prototypes, array-extras (map, filter)
 etc. While doing the exercises, always have a list of fundamental ideas in
-JavaScript in your mind.&lt;/p&gt;
+JavaScript in your mind. A friend of mine, Armagan, who is an excellent
+JavaScript programmer and teacher uses the book
+&lt;a href=&quot;http://www.apress.com/9781590599082&quot;&gt;Pro JavaScript Design Patterns&lt;/a&gt; in his
+lectures, so this book is worth checking out.&lt;/p&gt;
 
 &lt;p&gt;Try to answer questions such as: How does prototypal inheritance work? What
 defines a closure? How does the meaning of this keyword change? How does one
