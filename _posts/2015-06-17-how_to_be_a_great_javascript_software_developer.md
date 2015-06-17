@@ -161,4 +161,4 @@ Ustun
 
 *Thanks to [Engin Arslan](http://enginarslan.com/) for initiating this discussion with me.*
 
-*Discuss this on [HackerNews]()*
+*Discuss this on [HackerNews](https://news.ycombinator.com/item?id=9731230)*
