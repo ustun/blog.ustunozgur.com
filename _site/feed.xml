@@ -6,8 +6,8 @@
 </description>
     <link>http://ustunozgur.com/</link>
     <atom:link href="http://ustunozgur.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 17 Jun 2015 18:04:11 +0300</pubDate>
-    <lastBuildDate>Wed, 17 Jun 2015 18:04:11 +0300</lastBuildDate>
+    <pubDate>Wed, 17 Jun 2015 19:12:28 +0300</pubDate>
+    <lastBuildDate>Wed, 17 Jun 2015 19:12:28 +0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -167,7 +167,7 @@ principal source and discovering the new additions to the language.&lt;/p&gt;
 final recommendations will entail how to get the best out of resources on the
 Web. Hacker News is a good source, however tracking it constantly will usually
 cost more time than needed, as the signal to noise ratio will be low. Instead,
-aim for weekly digests such as JavaScript Weekly. Over time, you will see
+aim for weekly digests such as &lt;a href=&quot;http://javascriptweekly.com/&quot;&gt;JavaScript Weekly&lt;/a&gt;. Over time, you will see
 which libraries or techniques are getting traction. On Twitter, try to find
 influential JavaScript developers. This list of
 &lt;a href=&quot;http://code.tutsplus.com/articles/33-developers-you-must-subscribe-to-as-a-javascript-junkie--net-18151&quot;&gt;33 JavaScript developers to follow&lt;/a&gt;

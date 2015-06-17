@@ -123,7 +123,7 @@ I mentioned earlier the dangers of using the Web to learn about the Web, so my
 final recommendations will entail how to get the best out of resources on the
 Web. Hacker News is a good source, however tracking it constantly will usually
 cost more time than needed, as the signal to noise ratio will be low. Instead,
-aim for weekly digests such as JavaScript Weekly. Over time, you will see
+aim for weekly digests such as [JavaScript Weekly](http://javascriptweekly.com/). Over time, you will see
 which libraries or techniques are getting traction. On Twitter, try to find
 influential JavaScript developers. This list of
 [33 JavaScript developers to follow](http://code.tutsplus.com/articles/33-developers-you-must-subscribe-to-as-a-javascript-junkie--net-18151)
