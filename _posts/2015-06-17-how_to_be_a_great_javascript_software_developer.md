@@ -2,12 +2,12 @@
 layout: post
 title:  "How to Become a Great JavaScript Developer"
 date:   2015-06-17 14:15:29
-categories: jekyll update
+categories: javascript programming books videos
 ---
 
 When I was growing up, my interests spanned various, seemingly unrelated
-fields. I loved maths as much as I loved history. I aimed to be a Renaissance
-man -a polymath-, that excelled at multiple fields. This turned out to be an
+fields. I loved maths as much as I loved history. I aimed to be a [Renaissance
+man](https://en.wikipedia.org/wiki/Renaissance_Man) -a [polymath](https://en.wikipedia.org/wiki/Polymath)-, that excelled at multiple fields. This turned out to be an
 arduous task and suddenly I faced the danger of being a jack of all trades,
 master of none.
 
@@ -38,9 +38,9 @@ to learn when to stay away from the Web itself. Web itself presents a chaotic
 and distracting medium for learning stuff, so the first suggestion I will make
 is to read books on the subject matter.
 
-For JavaScript, start with the following books: JavaScript the Good Parts is
+For JavaScript, start with the following books: [JavaScript the Good Parts](http://shop.oreilly.com/product/9780596517748.do) is
 like the bible of JavaScript. It is an old one, but still the best for
-starting out. JavaScript the Definitive Guide is also a must have, though you
+starting out. [JavaScript: the Definitive Guide](http://shop.oreilly.com/product/9780596805531.do) is also a must have, though you
 will probably keep it as a reference. jQuery's principle author John Resig's
 [Secrets of the JavaScript Ninja](www.manning.com/resig/) is also notable. If
 you are looking for good (and freely available online) books, take a look at

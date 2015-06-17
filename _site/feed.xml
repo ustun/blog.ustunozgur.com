@@ -6,15 +6,15 @@
 </description>
     <link>http://ustunozgur.com/</link>
     <atom:link href="http://ustunozgur.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 17 Jun 2015 14:37:34 +0300</pubDate>
-    <lastBuildDate>Wed, 17 Jun 2015 14:37:34 +0300</lastBuildDate>
+    <pubDate>Wed, 17 Jun 2015 14:54:36 +0300</pubDate>
+    <lastBuildDate>Wed, 17 Jun 2015 14:54:36 +0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>How to Become a Great JavaScript Developer</title>
         <description>&lt;p&gt;When I was growing up, my interests spanned various, seemingly unrelated
-fields. I loved maths as much as I loved history. I aimed to be a Renaissance
-man -a polymath-, that excelled at multiple fields. This turned out to be an
+fields. I loved maths as much as I loved history. I aimed to be a &lt;a href=&quot;https://en.wikipedia.org/wiki/Renaissance_Man&quot;&gt;Renaissance
+man&lt;/a&gt; -a &lt;a href=&quot;https://en.wikipedia.org/wiki/Polymath&quot;&gt;polymath&lt;/a&gt;-, that excelled at multiple fields. This turned out to be an
 arduous task and suddenly I faced the danger of being a jack of all trades,
 master of none.&lt;/p&gt;
 
@@ -45,9 +45,9 @@ to learn when to stay away from the Web itself. Web itself presents a chaotic
 and distracting medium for learning stuff, so the first suggestion I will make
 is to read books on the subject matter.&lt;/p&gt;
 
-&lt;p&gt;For JavaScript, start with the following books: JavaScript the Good Parts is
+&lt;p&gt;For JavaScript, start with the following books: &lt;a href=&quot;http://shop.oreilly.com/product/9780596517748.do&quot;&gt;JavaScript the Good Parts&lt;/a&gt; is
 like the bible of JavaScript. It is an old one, but still the best for
-starting out. JavaScript the Definitive Guide is also a must have, though you
+starting out. &lt;a href=&quot;http://shop.oreilly.com/product/9780596805531.do&quot;&gt;JavaScript: the Definitive Guide&lt;/a&gt; is also a must have, though you
 will probably keep it as a reference. jQuery’s principle author John Resig’s
 &lt;a href=&quot;www.manning.com/resig/&quot;&gt;Secrets of the JavaScript Ninja&lt;/a&gt; is also notable. If
 you are looking for good (and freely available online) books, take a look at
@@ -165,13 +165,17 @@ effort and you can hopefully become an expert after a few years. I consider myse
 &lt;p&gt;&lt;em&gt;Discuss this on &lt;a href=&quot;&quot;&gt;HackerNews&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 17 Jun 2015 17:15:29 +0300</pubDate>
-        <link>http://ustunozgur.com/jekyll/update/2015/06/17/how_to_be_a_great_javascript_software_developer.html</link>
-        <guid isPermaLink="true">http://ustunozgur.com/jekyll/update/2015/06/17/how_to_be_a_great_javascript_software_developer.html</guid>
+        <link>http://ustunozgur.com/javascript/programming/books/videos/2015/06/17/how_to_be_a_great_javascript_software_developer.html</link>
+        <guid isPermaLink="true">http://ustunozgur.com/javascript/programming/books/videos/2015/06/17/how_to_be_a_great_javascript_software_developer.html</guid>
         
         
-        <category>jekyll</category>
+        <category>javascript</category>
         
-        <category>update</category>
+        <category>programming</category>
+        
+        <category>books</category>
+        
+        <category>videos</category>
         
       </item>
     

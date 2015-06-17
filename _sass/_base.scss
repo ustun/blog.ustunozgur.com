@@ -32,9 +32,14 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit / 2;
+
 }
 
+
+h1, h2, h3, header .wrapper, footer .wrapper, p.rss-subscribe {
+  font-family: $title-font-family;
+}
 
 
 /**
@@ -153,9 +158,15 @@ pre {
 /**
  * Wrapper
  */
-.wrapper {
+
+header .wrapper, footer .wrapper {
     max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
     max-width:         calc(800px - (#{$spacing-unit} * 2));
+}
+
+.wrapper {
+    max-width: -webkit-calc(600px - (#{$spacing-unit} * 2));
+    max-width:         calc(600px - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
