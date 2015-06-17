@@ -83,8 +83,10 @@ language, so make sure to have a test harness that can run in node.js. Do
 small, but plenty exercises in node.js. Do katas and go through different ways
 of using JavaScript: closures, prototypes, array-extras (map, filter)
 etc. While doing the exercises, always have a list of fundamental ideas in
-JavaScript in your mind. A friend of mine, Armagan, who is an excellent
-JavaScript programmer and teacher uses the book
+JavaScript in your mind.
+
+A friend of mine, [Armagan](http://arm.ag/), who is an excellent JavaScript programmer and
+teacher uses the book
 [Pro JavaScript Design Patterns](http://www.apress.com/9781590599082) in his
 lectures, so this book is worth checking out.
 
