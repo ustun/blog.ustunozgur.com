@@ -16,8 +16,8 @@ least be "a jack of all trades, master of some" man, if not a Renaissance
 one. How could I specialize in a field while retaining the vast knowledge
 required to do software development?
 
-In this post, I outline the techniques and resources I used to become an
-expert JavaScript developer, based on my experience in the last 5 years.
+In this post, I outline the techniques and resources I used to become a good
+JavaScript developer, based on my experience in the last 5 years.
 
 Most of the web developers nowadays face the same problem: They have to excel
 at multiple different fields, from databases to backend architecture to
@@ -47,20 +47,21 @@ you are looking for good (and freely available online) books, take a look at
 [JavaScript Allongé](https://leanpub.com/javascript-allonge/),
 [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) and
 [Eloquent JavaScript](http://eloquentjavascript.net/). These can be purchased
-as ebooks or dead tree format. Also, not a book but for Mozilla's Developer
+as ebooks or dead tree format. Also, not a book but Mozilla's Developer
 Network has a good
 [guide on JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide).
 
 # Learn, Use and Read Libraries
 
 The next most important step is getting to know the libraries. If the books
-teach you how to read a language, the libraries teach you how to speak a
-language. There are two important things you can do with libraries: use them
-and read their source code. For using libraries, get acquainted with the
-following: jQuery, Backbone, underscore and one of React, Angular or
-Ember. This is not to say you have to use these libraries, but any decent
-JavaScript developer should at least have some experience (good or bad) with
-these libraries.
+teach you how to read a language, the libraries teach you how to speak
+it. There are two important things you can do with libraries: use them and
+read their source code.
+
+For using libraries, get acquainted with the following: jQuery, Backbone,
+underscore and one of React, Angular or Ember. This is not to say you have to
+use these libraries, but any decent JavaScript developer should at least have
+some experience (good or bad) with these libraries.
 
 The second important thing for improving your JavaScript skills is to read
 these libraries' source codes. Out of these, I highly suggest Backbone and
@@ -68,12 +69,13 @@ underscore's source codes, as they are written beautifully. Reading and
 understanding underscore will improve your functional programming
 skills. Another good library for reading the source code, as recommended to me
 by several developers is mootols (I personally don't have any experience using
-mootools or reading it, just conveying the message.)  Understanding others in
-the list, such as React, Ember etc. might be harder, but well worth the
-effort. At least skim through the source code of other libraries to see how to
-structure your code base and try to discover some patterns. Other notable
-libraries for using and reading the source code include d3, highcharts,
-moment.js.
+mootools or reading it, just conveying the message.)
+
+Understanding others in the list, such as React, Ember etc. might be harder,
+but well worth the effort. At least skim through the source code of other
+libraries to see how to structure your code base and try to discover some
+patterns. Other notable libraries for using and reading the source code
+include d3, highcharts, moment.js.
 
 # Do Exercises and Ask Questions to Yourself
 
@@ -134,22 +136,22 @@ if you are interested in this blog post),
 [Nicholas Zakas' blog](http://www.nczonline.net/). (Email me if you have
 pointers to other good blogs and I'll include it in this list.)
 
-Another important resource on the Web is conference videos and educational videos. For conferences, JSConf series are high quality. For educational videos, I strongly suggest Pluralsight, as they have a very army of developers preparing very focused courses. (no affliation with Pluralsgiht)
+Another important resource on the Web is conference videos and educational videos. For conferences, JSConf series are high quality. For educational videos, I strongly suggest Pluralsight, as they have an army of experienced developers preparing high quality courses. (no affiliation with Pluralsgiht)
 
 # TL;DR Version
 
-- Start with reading books as they give you distilled versions.
+- Start with reading books as they give you distilled information.
 - Learn fundamental libraries such as jQuery, underscore, Backbone; but also read their source codes.
-- Do exercises and try to explain common JavaScript concepts such as inheritance in your own words.
+- Do exercises and try to explain common JavaScript concepts such as inheritance in your own words. Give lectures and talks on these subjects.
 - Read through the new versions of the standard, and start using the latest additions to the language.
-- Follow Web resources in batch, through digests or blogs which you frequent once a week or conference and educational videos.
+- Follow the web resources in batch, through digests or blogs which you frequent once a week or conference and educational videos.
 
 # Conclusion
-Constantly repeating these and of course making lots of projects will improve
+Constantly repeating these and making lots of projects will improve
 your JavaScript skills immensely. Always keep in mind to make a dedicated
 effort and you can hopefully become an expert after a few years. I consider myself a good JavaScript programmer, and I still have a long way to expertise and these are the techniques I'm following in my journey. Feel free to reach out to me for feedback and corrections at <a mailto="ustun@ustunozgur.com ">ustun@ustunozgur.com</a>
 
-And finally, as Ustun Ozgur Software, we are looking for talented JavaScript developer in Istanbul, Turkey. See [our company website](http://ustunozgur.com) for job openings.
+And finally, as Ustun Ozgur Software, we are looking for talented JavaScript developers in Istanbul, Turkey. See [our company website](http://ustunozgur.com) for job openings.
 
 Happy learning,
 

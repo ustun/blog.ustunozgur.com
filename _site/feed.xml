@@ -6,8 +6,8 @@
 </description>
     <link>http://ustunozgur.com/</link>
     <atom:link href="http://ustunozgur.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 17 Jun 2015 15:04:34 +0300</pubDate>
-    <lastBuildDate>Wed, 17 Jun 2015 15:04:34 +0300</lastBuildDate>
+    <pubDate>Wed, 17 Jun 2015 15:11:33 +0300</pubDate>
+    <lastBuildDate>Wed, 17 Jun 2015 15:11:33 +0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -23,8 +23,8 @@ least be “a jack of all trades, master of some” man, if not a Renaissance
 one. How could I specialize in a field while retaining the vast knowledge
 required to do software development?&lt;/p&gt;
 
-&lt;p&gt;In this post, I outline the techniques and resources I used to become an
-expert JavaScript developer, based on my experience in the last 5 years.&lt;/p&gt;
+&lt;p&gt;In this post, I outline the techniques and resources I used to become a good
+JavaScript developer, based on my experience in the last 5 years.&lt;/p&gt;
 
 &lt;p&gt;Most of the web developers nowadays face the same problem: They have to excel
 at multiple different fields, from databases to backend architecture to
@@ -54,20 +54,21 @@ you are looking for good (and freely available online) books, take a look at
 &lt;a href=&quot;https://leanpub.com/javascript-allonge/&quot;&gt;JavaScript Allongé&lt;/a&gt;,
 &lt;a href=&quot;https://github.com/getify/You-Dont-Know-JS&quot;&gt;You Don’t Know JS&lt;/a&gt; and
 &lt;a href=&quot;http://eloquentjavascript.net/&quot;&gt;Eloquent JavaScript&lt;/a&gt;. These can be purchased
-as ebooks or dead tree format. Also, not a book but for Mozilla’s Developer
+as ebooks or dead tree format. Also, not a book but Mozilla’s Developer
 Network has a good
 &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide&quot;&gt;guide on JavaScript&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h1 id=&quot;learn-use-and-read-libraries&quot;&gt;Learn, Use and Read Libraries&lt;/h1&gt;
 
 &lt;p&gt;The next most important step is getting to know the libraries. If the books
-teach you how to read a language, the libraries teach you how to speak a
-language. There are two important things you can do with libraries: use them
-and read their source code. For using libraries, get acquainted with the
-following: jQuery, Backbone, underscore and one of React, Angular or
-Ember. This is not to say you have to use these libraries, but any decent
-JavaScript developer should at least have some experience (good or bad) with
-these libraries.&lt;/p&gt;
+teach you how to read a language, the libraries teach you how to speak
+it. There are two important things you can do with libraries: use them and
+read their source code.&lt;/p&gt;
+
+&lt;p&gt;For using libraries, get acquainted with the following: jQuery, Backbone,
+underscore and one of React, Angular or Ember. This is not to say you have to
+use these libraries, but any decent JavaScript developer should at least have
+some experience (good or bad) with these libraries.&lt;/p&gt;
 
 &lt;p&gt;The second important thing for improving your JavaScript skills is to read
 these libraries’ source codes. Out of these, I highly suggest Backbone and
@@ -75,12 +76,13 @@ underscore’s source codes, as they are written beautifully. Reading and
 understanding underscore will improve your functional programming
 skills. Another good library for reading the source code, as recommended to me
 by several developers is mootols (I personally don’t have any experience using
-mootools or reading it, just conveying the message.)  Understanding others in
-the list, such as React, Ember etc. might be harder, but well worth the
-effort. At least skim through the source code of other libraries to see how to
-structure your code base and try to discover some patterns. Other notable
-libraries for using and reading the source code include d3, highcharts,
-moment.js.&lt;/p&gt;
+mootools or reading it, just conveying the message.)&lt;/p&gt;
+
+&lt;p&gt;Understanding others in the list, such as React, Ember etc. might be harder,
+but well worth the effort. At least skim through the source code of other
+libraries to see how to structure your code base and try to discover some
+patterns. Other notable libraries for using and reading the source code
+include d3, highcharts, moment.js.&lt;/p&gt;
 
 &lt;h1 id=&quot;do-exercises-and-ask-questions-to-yourself&quot;&gt;Do Exercises and Ask Questions to Yourself&lt;/h1&gt;
 
@@ -140,24 +142,24 @@ if you are interested in this blog post),
 &lt;a href=&quot;http://www.nczonline.net/&quot;&gt;Nicholas Zakas’ blog&lt;/a&gt;. (Email me if you have
 pointers to other good blogs and I’ll include it in this list.)&lt;/p&gt;
 
-&lt;p&gt;Another important resource on the Web is conference videos and educational videos. For conferences, JSConf series are high quality. For educational videos, I strongly suggest Pluralsight, as they have a very army of developers preparing very focused courses. (no affliation with Pluralsgiht)&lt;/p&gt;
+&lt;p&gt;Another important resource on the Web is conference videos and educational videos. For conferences, JSConf series are high quality. For educational videos, I strongly suggest Pluralsight, as they have an army of experienced developers preparing high quality courses. (no affiliation with Pluralsgiht)&lt;/p&gt;
 
 &lt;h1 id=&quot;tldr-version&quot;&gt;TL;DR Version&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Start with reading books as they give you distilled versions.&lt;/li&gt;
+  &lt;li&gt;Start with reading books as they give you distilled information.&lt;/li&gt;
   &lt;li&gt;Learn fundamental libraries such as jQuery, underscore, Backbone; but also read their source codes.&lt;/li&gt;
-  &lt;li&gt;Do exercises and try to explain common JavaScript concepts such as inheritance in your own words.&lt;/li&gt;
+  &lt;li&gt;Do exercises and try to explain common JavaScript concepts such as inheritance in your own words. Give lectures and talks on these subjects.&lt;/li&gt;
   &lt;li&gt;Read through the new versions of the standard, and start using the latest additions to the language.&lt;/li&gt;
-  &lt;li&gt;Follow Web resources in batch, through digests or blogs which you frequent once a week or conference and educational videos.&lt;/li&gt;
+  &lt;li&gt;Follow the web resources in batch, through digests or blogs which you frequent once a week or conference and educational videos.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
-&lt;p&gt;Constantly repeating these and of course making lots of projects will improve
+&lt;p&gt;Constantly repeating these and making lots of projects will improve
 your JavaScript skills immensely. Always keep in mind to make a dedicated
 effort and you can hopefully become an expert after a few years. I consider myself a good JavaScript programmer, and I still have a long way to expertise and these are the techniques I’m following in my journey. Feel free to reach out to me for feedback and corrections at &lt;a mailto=&quot;ustun@ustunozgur.com &quot;&gt;ustun@ustunozgur.com&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;And finally, as Ustun Ozgur Software, we are looking for talented JavaScript developer in Istanbul, Turkey. See &lt;a href=&quot;http://ustunozgur.com&quot;&gt;our company website&lt;/a&gt; for job openings.&lt;/p&gt;
+&lt;p&gt;And finally, as Ustun Ozgur Software, we are looking for talented JavaScript developers in Istanbul, Turkey. See &lt;a href=&quot;http://ustunozgur.com&quot;&gt;our company website&lt;/a&gt; for job openings.&lt;/p&gt;
 
 &lt;p&gt;Happy learning,&lt;/p&gt;
 
