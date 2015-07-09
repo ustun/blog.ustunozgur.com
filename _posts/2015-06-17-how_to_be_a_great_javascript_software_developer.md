@@ -159,6 +159,9 @@ Ustun
 
 *If you have read so far, consider following me on Twitter at [@ustunozgur](http://twitter.com/ustunozgur)*
 
+*Interested in React.js and Advanced JS Training? See [my training/workshop site](http://reactjs-workshops.com)*
+
+
 *Thanks to [Engin Arslan](http://enginarslan.com/) for initiating this discussion with me.*
 
 *Discuss this on [HackerNews](https://news.ycombinator.com/item?id=9731230)*
