@@ -177,3 +177,6 @@ of Django and similar solutions seemed same.
 The tides have changed there too. Now, you need just two endpoints: One for
 serving the initial HTML, one for the API endpoints. This is the essence of
 web programming in the future: Two endpoints to rule them all.
+
+
+*Discuss at [HackerNews](https://news.ycombinator.com/item?id=10722265)*
