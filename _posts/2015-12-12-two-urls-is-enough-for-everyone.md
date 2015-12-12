@@ -76,7 +76,8 @@ about it for a minute before proceeding.
 
 This is what GraphQL, a query language for the web proposes:
 
-`
+{% highlight js %}
+
     query {
        articles
        {
@@ -87,8 +88,7 @@ This is what GraphQL, a query language for the web proposes:
           }
        }
     }
-`
-
+{% endhighlight %}
 
 Beautiful and simple. This is not some clever trick. In my opinion, this is
 what should have been all the time.
@@ -123,16 +123,19 @@ What is `article` here? It is simply a function that somehow accepts that `id`
 parameter. There is nothing magical about id, it is just the name of the
 keyword argument the `article` resolve method accepts.
 
-Now here is the other great thing: Remember we constructed our query by specifying what we want. The search gives us exactly that: What we want, in the format we want it.
+Now here is the other great thing: Remember we constructed our query by
+specifying what we want. The search gives us exactly that: What we want, in
+the format we want it.
 
-` {
+{% highlight js %}
+{
 "title": "URLs must die",
 "body": "Is GraphQL the killer?"
 "author": {
       "name": "Ustun Ozgur"
 }
 }
-`
+{% endhighlight %}
 
 # Conclusion
 
