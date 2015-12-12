@@ -154,16 +154,18 @@ shared, simply return what your single endpoint for generating your HTML
 returns. For everything else, there is GraphQL.
 
 
-If you want to learn about GraphQL, watch this talk by one of its creators:
-http://oredev.org/2015/sessions/introduction-to-graphql
+If you want to learn about GraphQL, watch this talk by one of its creators Lee Byron: [Video](http://oredev.org/2015/sessions/introduction-to-graphql)
 
 
-Cannot wait to dive in? You can play with it at graphql-swapi.parseapp.com
+
+Cannot wait to dive in? You can play with it and the StarWars API at [GraphQL server for StarWars API](http://graphql-swapi.parseapp.com)
 
 Just hit Ctrl-Space and you are on your own. Oh, had I mentioned that GraphQL
 has a schema with types, so it can help you build correct queries with full
 documentation on the fly? Click docs at the right there, but you probably
 don't need it  because of intellisense.
+
+Your backend is written in Python: Check out this very convenient implementation called [Graphene](http://graphene-python.org/playground/)
 
 Two years ago at DjangoCon Europe, I gave a talk on how React would kill the
 template layer of Django. It is much more powerful and the war scene nowadays
