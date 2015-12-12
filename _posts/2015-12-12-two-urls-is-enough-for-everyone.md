@@ -7,7 +7,7 @@ categories: web graphql react javascript programming
 
 How many entrance doors does your house have? Would you be willing to enter
 your home from the windows? Can you enter the living room from the outside?
-Your entrace door is the supernode of your house.
+Your entrance door is the supernode of your house.
 
 How many entrance web sites do you visit daily? Google, Facebook, Twitter,
 Hacker News, Reddit? How many? Not that many. Usually these supernode sites
