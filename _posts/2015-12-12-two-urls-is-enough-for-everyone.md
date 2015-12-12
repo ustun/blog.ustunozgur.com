@@ -10,7 +10,7 @@ your home from the windows? Can you enter the living room from the outside?
 Your entrance door is the supernode of your house.
 
 How many entrance web sites do you visit daily? Google, Facebook, Twitter,
-Hacker News, Reddit? How many? Not that many. Usually these supernode sites
+Hacker News, Reddit? How many? Not that many. Usually these sites
 take you to other places. These sites are the supernodes of the web.
 
 How many entrance urls does your web application have? Many? How many? A few?
@@ -46,7 +46,7 @@ functions. These functions are so powerful that they can accept multiple
 arguments! That might seem like a trivial statement, but think about how we
 call functions on our servers from the client side.
 
-We effectively send a string to a url whic is another string: The server
+We effectively send a string to a url which is another string: The server
 receives two strings: the path and the query params (or post body as
 string). The first string is parsed to get the function to call and some
 parameters to be passed to that. The second string is parsed to get the
@@ -75,7 +75,7 @@ about it for a minute before proceeding.
 
 This is what GraphQL, a query language for the web proposes:
 
-```js
+`
     query {
        articles
        {
@@ -86,7 +86,7 @@ This is what GraphQL, a query language for the web proposes:
           }
        }
     }
-```
+`
 
 
 Beautiful and simple. This is not some clever trick. In my opinion, this is
