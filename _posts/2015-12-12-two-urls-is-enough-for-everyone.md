@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Two URLs is enough for everyone or the death of web programming as we know it"
+title:  "Two URLs is enough for everyone"
 date:   2015-12-11 10:44
 categories: web graphql react javascript programming
 ---
 
+# or the death of web programming as we know it
 How many entrance doors does your house have? Would you be willing to enter
 your home from the windows? Can you enter the living room from the outside?
 Your entrance door is the supernode of your house.
