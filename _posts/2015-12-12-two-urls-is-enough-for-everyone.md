@@ -104,7 +104,7 @@ arguments, supported one way or another in any language. If your function can
 accept an object that is essentially a bag of arguments, that is called to get
 that object.
 
-```js
+`
     query {
        article(id: 1)
        {
@@ -115,13 +115,23 @@ that object.
           }
        }
     }
-```
+`
 
 
 What is `article` here? It is simply a function that somehow accepts that `id`
 parameter. There is nothing magical about id, it is just the name of the
 keyword argument the `article` resolve method accepts.
 
+Now here is the other great thing: Remember we constructed our query by specifying what we want. The search gives us exactly that: What we want, in the format we want it.
+
+` {
+"title": "URLs must die",
+"body": "Is GraphQL the killer?"
+"author": {
+      "name": "Ustun Ozgur"
+}
+}
+`
 
 # Conclusion
 
