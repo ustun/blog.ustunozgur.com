@@ -56,7 +56,7 @@ tries hard enough to understand what our query is.
 
 Why do we need that? We have been accustomed to getting JSON responses from the server. Isn't it time to stop sending strings to the server and start sending a structured data format? GraphQL achives exactly that.
 
-Take this example from jsonapiorg: `/articles?include=author&fields[articles]=title,body&fields[people]=name`
+Take this example from jsonapi.org: `/articles?include=author&fields[articles]=title,body&fields[people]=name`
 Jsonapi in theory does not say how you should build your urls, but this is the recommended approach.
 
 What are we trying to achieve here? How would you explain this to a
@@ -105,7 +105,7 @@ arguments, supported one way or another in any language. If your function can
 accept an object that is essentially a bag of arguments, that is called to get
 that object.
 
-`
+{% highlight js %}
     query {
        article(id: 1)
        {
@@ -116,7 +116,7 @@ that object.
           }
        }
     }
-`
+{% endhighlight %}
 
 
 What is `article` here? It is simply a function that somehow accepts that `id`
