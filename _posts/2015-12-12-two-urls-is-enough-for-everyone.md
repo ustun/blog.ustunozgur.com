@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Two URLs is enough for everyone"
+title:  "Two URLs are enough for everyone"
 date:   2015-12-11 10:44
 categories: web graphql react javascript programming
 ---
@@ -21,7 +21,7 @@ With the proliferation of single page applications, we had it coming, but
 Facebook's GraphQL puts the final nail in the coffin for the web development
 and URLs as we know them:
 
-# Two URLs is enough for everyone.
+# Two URLs are enough for everyone.
 
 Of course, I'm exaggarating a bit for the purposes of demonstration. What I
 mean is, for most web applications to be built now and in the future, two
