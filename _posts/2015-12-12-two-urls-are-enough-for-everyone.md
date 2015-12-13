@@ -158,7 +158,7 @@ If you want to learn about GraphQL, watch this talk by one of its creators Lee B
 
 
 Cannot wait to dive in? You can play with it and the StarWars API at
-[GraphQL server for StarWars API](http://graphql-swapi.parseapp.com/?query=%23%20Welcome%20to%20GraphiQL%0A%23%0A%23%20GraphiQL%20is%20an%20in-browser%20IDE%20for%20writing%2C%20validating%2C%20and%0A%23%20testing%20GraphQL%20queries.%0A%23%0A%23%20Type%20queries%20into%20this%20side%20of%20the%20screen%2C%20and%20you%20will%0A%23%20see%20intelligent%20typeaheads%20aware%20of%20the%20current%20GraphQL%20type%20schema%20and%0A%23%20live%20syntax%20and%20validation%20errors%20highlighted%20within%20the%20text.%0A%23%0A%23%20To%20bring%20up%20the%20auto-complete%20at%20any%20point%2C%20just%20press%20Ctrl-Space.%0A%23%0A%23%20Press%20the%20run%20button%20above%2C%20or%20Cmd-Enter%20to%20execute%20the%20query%2C%20and%20the%20result%0A%23%20will%20appear%20in%20the%20pane%20to%20the%20right.%0A%0A%7B%0A%20%20%0A%20%20%0A%20%20allFilms(first%3A%203)%20%7B%0A%20%20%20%20%0A%20%20%20%20films%20%7B%0A%20%20%20%20%20%20title%0A%20%20%20%20%20%20director%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D)
+[GraphQL server for StarWars API](http://bit.ly/1Qa4h00)
 
 Just hit Ctrl-Space and you are on your own. Oh, had I mentioned that GraphQL
 has a schema with types, so it can help you build correct queries with full
@@ -172,7 +172,7 @@ Two years ago at DjangoCon Europe, I gave a talk on how React would kill the
 template layer of Django. It is much more powerful and the war scene nowadays
 is client side. You cannot enter this war with crippled templating solutions,
 you need the full power of a good language. At the time, the url routing layer
-of Django and similar solutions seemed same.
+of Django and similar solutions seemed safe.
 
 The tides have changed there too. Now, you need just two endpoints: One for
 serving the initial HTML, one for the API endpoints. This is the essence of
