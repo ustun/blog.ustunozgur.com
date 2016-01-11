@@ -6,9 +6,193 @@
 </description>
     <link>http://ustunozgur.com/</link>
     <atom:link href="http://ustunozgur.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 17 Jun 2015 19:41:00 +0300</pubDate>
-    <lastBuildDate>Wed, 17 Jun 2015 19:41:00 +0300</lastBuildDate>
+    <pubDate>Sat, 09 Jan 2016 06:55:07 +0200</pubDate>
+    <lastBuildDate>Sat, 09 Jan 2016 06:55:07 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Two URLs are enough for everyone</title>
+        <description>&lt;h1 id=&quot;or-the-death-of-web-programming-as-we-know-it&quot;&gt;or the death of web programming as we know it&lt;/h1&gt;
+&lt;p&gt;How many entrance doors does your house have? Would you be willing to enter
+your home from the windows? Can you enter the living room from the outside?
+Your entrance door is the supernode of your house.&lt;/p&gt;
+
+&lt;p&gt;How many entrance web sites do you visit daily? Google, Facebook, Twitter,
+Hacker News, Reddit? How many? Not that many. Usually these sites
+take you to other places. These sites are the supernodes of the web.&lt;/p&gt;
+
+&lt;p&gt;How many entrance urls does your web application have? Many? How many? A few?
+Two? One? Why is it that we have scattered our endpoints so much?&lt;/p&gt;
+
+&lt;p&gt;With the proliferation of single page applications, we had it coming, but
+Facebook’s GraphQL puts the final nail in the coffin for the web development
+and URLs as we know them:&lt;/p&gt;
+
+&lt;h1 id=&quot;two-urls-are-enough-for-everyone&quot;&gt;Two URLs are enough for everyone.&lt;/h1&gt;
+
+&lt;p&gt;Of course, I’m exaggarating a bit for the purposes of demonstration. What I
+mean is, for most web applications to be built now and in the future, two
+endpoints will suffice – one for constructing the client page and one for the
+API requests. Let me explain.&lt;/p&gt;
+
+&lt;h1 id=&quot;why-do-we-need-urls&quot;&gt;Why do we need URLs?&lt;/h1&gt;
+
+&lt;p&gt;Web was invented to share documents at Cern. It was mainly for human
+consumption – share links within each other. If a URL does not need to be
+shared or bookmarked or crawled by search engines, it does not need to exist
+beyong a simple endpoint.&lt;/p&gt;
+
+&lt;p&gt;Facebook’s GraphQL achieves exactly that vision. It gives you a single
+endpoint, from which you drill down to the resources you have. The resources
+do not have unique endpoints, rather you ask the endpoint what resource and
+what fields of that resource you are interested in.&lt;/p&gt;
+
+&lt;h1 id=&quot;it-is-functions-all-the-way-down&quot;&gt;It is functions all the way down&lt;/h1&gt;
+
+&lt;p&gt;We as programmers are accustomed to programming languages with
+functions. These functions are so powerful that they can accept multiple
+arguments! That might seem like a trivial statement, but think about how we
+call functions on our servers from the client side.&lt;/p&gt;
+
+&lt;p&gt;We effectively send a string to a url which is another string: The server
+receives two strings: the path and the query params (or post body as
+string). The first string is parsed to get the function to call and some
+parameters to be passed to that. The second string is parsed to get the
+additional parameters to be passed to that function. Ugh. The poor application
+tries hard enough to understand what our query is.&lt;/p&gt;
+
+&lt;p&gt;Why do we need that? We have been accustomed to getting JSON responses from the server. Isn’t it time to stop sending strings to the server and start sending a structured data format? GraphQL achives exactly that.&lt;/p&gt;
+
+&lt;p&gt;Take this example from jsonapi.org: &lt;code&gt;/articles?include=author&amp;amp;fields[articles]=title,body&amp;amp;fields[people]=name&lt;/code&gt;
+Jsonapi in theory does not say how you should build your urls, but this is the recommended approach.&lt;/p&gt;
+
+&lt;p&gt;What are we trying to achieve here? How would you explain this to a
+nontechnical person? You would literally expect him to parse this breathless
+sentence, with weird delimiters.&lt;/p&gt;
+
+&lt;p&gt;As programmers, sometimes we get so accustomed to tradition that we do not
+question the strangeness of our solutions. Sending strings might been a good
+way in the 1990s or even 2000s, but do we really need to torture ourselves and
+the server to communicate the following request?&lt;/p&gt;
+
+&lt;p&gt;I want to get articles. For each article, include the related author too and
+their name. For the article itself, send me the title and body.&lt;/p&gt;
+
+&lt;p&gt;How would you express it if you had come up with a way on your own? Think
+about it for a minute before proceeding.&lt;/p&gt;
+
+&lt;p&gt;This is what GraphQL, a query language for the web proposes:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;query&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;nx&quot;&gt;articles&lt;/span&gt;
+       &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+       &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Beautiful and simple. This is not some clever trick. In my opinion, this is
+what should have been all the time.&lt;/p&gt;
+
+&lt;p&gt;And what is this &lt;code&gt;articles&lt;/code&gt; thing on server side? It is just a function or an
+object with a resolve method!  It resolves the articles, and for each article,
+you need to define additional resolve methods for the fields, namely title,
+body and author. And note that author is another object, not a field on the
+article, so that in turn has a resolve method for its name property. You can
+go as deep as you’d like!&lt;/p&gt;
+
+&lt;p&gt;And what if I want to send parameters to my resource? Simple: keyword
+arguments, supported one way or another in any language. If your function can
+accept an object that is essentially a bag of arguments, that is called to get
+that object.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;query&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;nx&quot;&gt;article&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+       &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+       &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;What is &lt;code&gt;article&lt;/code&gt; here? It is simply a function that somehow accepts that &lt;code&gt;id&lt;/code&gt;
+parameter. There is nothing magical about id, it is just the name of the
+keyword argument the &lt;code&gt;article&lt;/code&gt; resolve method accepts.&lt;/p&gt;
+
+&lt;p&gt;Now here is the other great thing: Remember we constructed our query by
+specifying what we want. The search gives us exactly that: What we want, in
+the format we want it.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;URLs must die&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&amp;quot;body&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Is GraphQL the killer?&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&amp;quot;author&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Ustun Ozgur&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;So, back to my original point: Two endpoints is good enough for most people
+for web application programming. You might actually have more than 2 “URLs”
+per se, but those do not need to be concerning the server other than simple
+redirection of the response. The URLs itself are not redirected, you just
+return the same response that generates your HTML from these human visible
+URLs. You can do the routing on the clientside, the client side router simply
+determines the parameters to be passed to the GraphQL endpoint.&lt;/p&gt;
+
+&lt;p&gt;On the server side, you have two functions: One for generating the initial
+HTML that bootstraps your application. If you want to have the following URLS,
+/, /home/, /account/, /questions/ , provided that you need them bookmarked and
+shared, simply return what your single endpoint for generating your HTML
+returns. For everything else, there is GraphQL.&lt;/p&gt;
+
+&lt;p&gt;If you want to learn about GraphQL, watch this talk by one of its creators Lee Byron: &lt;a href=&quot;http://oredev.org/2015/sessions/introduction-to-graphql&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Cannot wait to dive in? You can play with it and the StarWars API at
+&lt;a href=&quot;http://bit.ly/1Qa4h00&quot;&gt;GraphQL server for StarWars API&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Just hit Ctrl-Space and you are on your own. Oh, had I mentioned that GraphQL
+has a schema with types, so it can help you build correct queries with full
+documentation on the fly? Click docs at the right there, but you probably
+don’t need it because of intellisense.&lt;/p&gt;
+
+&lt;p&gt;Your backend is written in Python: Check out this very convenient
+implementation called &lt;a href=&quot;http://graphene-python.org/playground/&quot;&gt;Graphene&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Two years ago at DjangoCon Europe, I gave a talk on how React would kill the
+template layer of Django. It is much more powerful and the war scene nowadays
+is client side. You cannot enter this war with crippled templating solutions,
+you need the full power of a good language. At the time, the url routing layer
+of Django and similar solutions seemed safe.&lt;/p&gt;
+
+&lt;p&gt;The tides have changed there too. Now, you need just two endpoints: One for
+serving the initial HTML, one for the API endpoints. This is the essence of
+web programming in the future: Two endpoints to rule them all.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Discuss at &lt;a href=&quot;https://news.ycombinator.com/item?id=10722265&quot;&gt;HackerNews&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 11 Dec 2015 10:44:00 +0200</pubDate>
+        <link>http://ustunozgur.com/web/graphql/react/javascript/programming/2015/12/11/two-urls-are-enough-for-everyone.html</link>
+        <guid isPermaLink="true">http://ustunozgur.com/web/graphql/react/javascript/programming/2015/12/11/two-urls-are-enough-for-everyone.html</guid>
+        
+        
+        <category>web</category>
+        
+        <category>graphql</category>
+        
+        <category>react</category>
+        
+        <category>javascript</category>
+        
+        <category>programming</category>
+        
+      </item>
     
       <item>
         <title>My Recent Talks on JavaScript</title>
@@ -204,6 +388,8 @@ effort and you can hopefully become an expert after a few years. I consider myse
 &lt;p&gt;Ustun&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;If you have read so far, consider following me on Twitter at &lt;a href=&quot;http://twitter.com/ustunozgur&quot;&gt;@ustunozgur&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Interested in React.js and Advanced JS Training? See &lt;a href=&quot;http://reactjs-workshops.com&quot;&gt;my training/workshop site&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Thanks to &lt;a href=&quot;http://enginarslan.com/&quot;&gt;Engin Arslan&lt;/a&gt; for initiating this discussion with me.&lt;/em&gt;&lt;/p&gt;
 
