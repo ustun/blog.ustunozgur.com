@@ -115,7 +115,7 @@ tries hard enough to understand what our query is.</p>
 
 <p>Why do we need that? We have been accustomed to getting JSON responses from the server. Isn’t it time to stop sending strings to the server and start sending a structured data format? GraphQL achives exactly that.</p>
 
-<p>Take this example from jsonapi.org: <code>/articles?include=author&amp;fields[articles]=title,body&amp;fields[people]=name</code>
+<p>Take this example from jsonapi.org: <code class="highlighter-rouge">/articles?include=author&amp;fields[articles]=title,body&amp;fields[people]=name</code>
 Jsonapi in theory does not say how you should build your urls, but this is the recommended approach.</p>
 
 <p>What are we trying to achieve here? How would you explain this to a
@@ -135,7 +135,7 @@ about it for a minute before proceeding.</p>
 
 <p>This is what GraphQL, a query language for the web proposes:</p>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">query</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js">    <span class="nx">query</span> <span class="p">{</span>
        <span class="nx">articles</span>
        <span class="p">{</span>
           <span class="nx">title</span>
@@ -144,12 +144,12 @@ about it for a minute before proceeding.</p>
             <span class="nx">name</span>
           <span class="p">}</span>
        <span class="p">}</span>
-    <span class="p">}</span></code></pre></div>
+    <span class="p">}</span></code></pre></figure>
 
 <p>Beautiful and simple. This is not some clever trick. In my opinion, this is
 what should have been all the time.</p>
 
-<p>And what is this <code>articles</code> thing on server side? It is just a function or an
+<p>And what is this <code class="highlighter-rouge">articles</code> thing on server side? It is just a function or an
 object with a resolve method!  It resolves the articles, and for each article,
 you need to define additional resolve methods for the fields, namely title,
 body and author. And note that author is another object, not a field on the
@@ -161,8 +161,8 @@ arguments, supported one way or another in any language. If your function can
 accept an object that is essentially a bag of arguments, that is called to get
 that object.</p>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">query</span> <span class="p">{</span>
-       <span class="nx">article</span><span class="p">(</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js">    <span class="nx">query</span> <span class="p">{</span>
+       <span class="nx">article</span><span class="p">(</span><span class="nx">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span>
        <span class="p">{</span>
           <span class="nx">title</span>
           <span class="nx">body</span>
@@ -170,23 +170,23 @@ that object.</p>
             <span class="nx">name</span>
           <span class="p">}</span>
        <span class="p">}</span>
-    <span class="p">}</span></code></pre></div>
+    <span class="p">}</span></code></pre></figure>
 
-<p>What is <code>article</code> here? It is simply a function that somehow accepts that <code>id</code>
+<p>What is <code class="highlighter-rouge">article</code> here? It is simply a function that somehow accepts that <code class="highlighter-rouge">id</code>
 parameter. There is nothing magical about id, it is just the name of the
-keyword argument the <code>article</code> resolve method accepts.</p>
+keyword argument the <code class="highlighter-rouge">article</code> resolve method accepts.</p>
 
 <p>Now here is the other great thing: Remember we constructed our query by
 specifying what we want. The search gives us exactly that: What we want, in
 the format we want it.</p>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="p">{</span>
-<span class="s2">&quot;title&quot;</span><span class="o">:</span> <span class="s2">&quot;URLs must die&quot;</span><span class="p">,</span>
-<span class="s2">&quot;body&quot;</span><span class="o">:</span> <span class="s2">&quot;Is GraphQL the killer?&quot;</span>
-<span class="s2">&quot;author&quot;</span><span class="o">:</span> <span class="p">{</span>
-      <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;Ustun Ozgur&quot;</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="p">{</span>
+<span class="s2">"title"</span><span class="p">:</span> <span class="s2">"URLs must die"</span><span class="p">,</span>
+<span class="s2">"body"</span><span class="p">:</span> <span class="s2">"Is GraphQL the killer?"</span>
+<span class="s2">"author"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Ustun Ozgur"</span>
 <span class="p">}</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span></code></pre></figure>
 
 <h1 id="conclusion">Conclusion</h1>
 

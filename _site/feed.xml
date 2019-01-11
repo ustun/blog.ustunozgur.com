@@ -6,9 +6,9 @@
 </description>
     <link>http://ustunozgur.com/</link>
     <atom:link href="http://ustunozgur.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 09 Jan 2016 06:55:07 +0200</pubDate>
-    <lastBuildDate>Sat, 09 Jan 2016 06:55:07 +0200</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
+    <pubDate>Fri, 11 Jan 2019 13:57:25 +0300</pubDate>
+    <lastBuildDate>Fri, 11 Jan 2019 13:57:25 +0300</lastBuildDate>
+    <generator>Jekyll v3.7.4</generator>
     
       <item>
         <title>Two URLs are enough for everyone</title>
@@ -63,7 +63,7 @@ tries hard enough to understand what our query is.&lt;/p&gt;
 
 &lt;p&gt;Why do we need that? We have been accustomed to getting JSON responses from the server. Isn’t it time to stop sending strings to the server and start sending a structured data format? GraphQL achives exactly that.&lt;/p&gt;
 
-&lt;p&gt;Take this example from jsonapi.org: &lt;code&gt;/articles?include=author&amp;amp;fields[articles]=title,body&amp;amp;fields[people]=name&lt;/code&gt;
+&lt;p&gt;Take this example from jsonapi.org: &lt;code class=&quot;highlighter-rouge&quot;&gt;/articles?include=author&amp;amp;fields[articles]=title,body&amp;amp;fields[people]=name&lt;/code&gt;
 Jsonapi in theory does not say how you should build your urls, but this is the recommended approach.&lt;/p&gt;
 
 &lt;p&gt;What are we trying to achieve here? How would you explain this to a
@@ -83,7 +83,7 @@ about it for a minute before proceeding.&lt;/p&gt;
 
 &lt;p&gt;This is what GraphQL, a query language for the web proposes:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;query&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;    &lt;span class=&quot;nx&quot;&gt;query&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
        &lt;span class=&quot;nx&quot;&gt;articles&lt;/span&gt;
        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
           &lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;
@@ -92,12 +92,12 @@ about it for a minute before proceeding.&lt;/p&gt;
             &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;
           &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Beautiful and simple. This is not some clever trick. In my opinion, this is
 what should have been all the time.&lt;/p&gt;
 
-&lt;p&gt;And what is this &lt;code&gt;articles&lt;/code&gt; thing on server side? It is just a function or an
+&lt;p&gt;And what is this &lt;code class=&quot;highlighter-rouge&quot;&gt;articles&lt;/code&gt; thing on server side? It is just a function or an
 object with a resolve method!  It resolves the articles, and for each article,
 you need to define additional resolve methods for the fields, namely title,
 body and author. And note that author is another object, not a field on the
@@ -109,8 +109,8 @@ arguments, supported one way or another in any language. If your function can
 accept an object that is essentially a bag of arguments, that is called to get
 that object.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;query&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-       &lt;span class=&quot;nx&quot;&gt;article&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;    &lt;span class=&quot;nx&quot;&gt;query&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;nx&quot;&gt;article&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
           &lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;
           &lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;
@@ -118,23 +118,23 @@ that object.&lt;/p&gt;
             &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;
           &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;What is &lt;code&gt;article&lt;/code&gt; here? It is simply a function that somehow accepts that &lt;code&gt;id&lt;/code&gt;
+&lt;p&gt;What is &lt;code class=&quot;highlighter-rouge&quot;&gt;article&lt;/code&gt; here? It is simply a function that somehow accepts that &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt;
 parameter. There is nothing magical about id, it is just the name of the
-keyword argument the &lt;code&gt;article&lt;/code&gt; resolve method accepts.&lt;/p&gt;
+keyword argument the &lt;code class=&quot;highlighter-rouge&quot;&gt;article&lt;/code&gt; resolve method accepts.&lt;/p&gt;
 
 &lt;p&gt;Now here is the other great thing: Remember we constructed our query by
 specifying what we want. The search gives us exactly that: What we want, in
 the format we want it.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;s2&quot;&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;URLs must die&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;s2&quot;&gt;&amp;quot;body&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Is GraphQL the killer?&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;s2&quot;&gt;&amp;quot;author&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Ustun Ozgur&amp;quot;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;URLs must die&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;body&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Is GraphQL the killer?&quot;&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Ustun Ozgur&quot;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
 
@@ -328,7 +328,7 @@ JavaScript developers face and try to explain it in your own words. Explaining
 these concepts to another person in written or verbal form will help improve
 your skills immensely. While doing the exercises, try to go over those where
 you discover “What if?” scenarios. For example, “What is the meaning of “this”
-if I use bind twice? How does jQuery make sure that the &lt;code&gt;this&lt;/code&gt; keyword refers
+if I use bind twice? How does jQuery make sure that the &lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; keyword refers
 to the jQuery object and not the global object? How does this library achieve
 a certain feature?” are some common questions you should be asking yourself.&lt;/p&gt;
 
@@ -411,7 +411,7 @@ effort and you can hopefully become an expert after a few years. I consider myse
       </item>
     
       <item>
-        <title>Welcome to Ustun Ozgur Software&#39;s Blog!</title>
+        <title>Welcome to Ustun Ozgur Software's Blog!</title>
         <description>&lt;p&gt;Hi there!&lt;/p&gt;
 
 &lt;p&gt;This is the first post in &lt;a href=&quot;http://ustunozgur.com&quot;&gt;Ustun Ozgur Software&lt;/a&gt;’s
