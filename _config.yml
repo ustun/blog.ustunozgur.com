@@ -2,7 +2,7 @@
 title: Ustun Ozgur - Software Engineering Blog
 email: ustun@ustunozgur.com
 description: > # this means to ignore newlines until "baseurl:"
-  Ustun Ozgur - Software Consultant and Engineer. Expert solution architect and programmer in Python (Django), JavaScript (React), .NET, Clojure annd Java.
+  Ustun Ozgur - Software Consultant and Engineer. Expert solution architect and programmer in Python (Django), JavaScript (React), .NET, Clojure and Java.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ustunozgur.com" # the base hostname & protocol for your site
 twitter_username: ustunozgur
